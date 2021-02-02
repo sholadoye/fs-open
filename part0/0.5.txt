@@ -1,4 +1,4 @@
-title User visits Singleapp App
+title User visits SinglePage App
 
 
 Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
