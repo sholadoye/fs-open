@@ -3,7 +3,7 @@ title Adding to the notes
 note left of Browser:
     user types in a new note
     into the input field and click's
-    the save button to save to the 
+    the save button to save to the browser
 end note
 
 Browser->Server: HTTP Server https://studies.cs.helsinki.fi/exampleapp/new_note
@@ -45,6 +45,6 @@ Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
 
 note right of Server: Server sends back data.json which is the full list of notes
 
-Server-->Browser: sends back data.json --the entire list of notes
+Server-->Browser: sends back data.json which is the full notes
 
 note left of Browser: note gets rendered in the browser
