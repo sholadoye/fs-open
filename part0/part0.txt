@@ -1,0 +1,50 @@
+title Adding to the notes
+
+note left of Browser:
+    user types in a new note
+    into the input field and click's
+    the save button to save to the 
+end note
+
+Browser->Server: HTTP Server https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note right of Server: server accepts and saves the new note
+
+note left of Browser: Browser sends a request to Server for notes
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+
+note right of Server: Server sends back HTML codes
+
+Server-->Browser: HTML codes
+
+note left of Browser: Server prompt browser to request for main.css
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+note right of Server: Server sends back main.css
+
+Server-->Browser: main.css
+
+note left of Browser: Server prompts browser to request for main.js 
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+note right of Server: Server sends back main.js
+
+Server-->Browser: main.js
+
+
+note over Browser: 
+The Browser executes the JavaScript code. 
+end note https://www.websequencediagrams.com/?png=msc453924714
+
+note left of Browser: Server prompts Browser to request for data.json 
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+note right of Server: Server sends back data.json which is the full list of notes
+
+Server-->Browser: sends back data.json --the entire list of notes
+
+note left of Browser: note gets rendered in the browser
